@@ -85,3 +85,6 @@ for keyword in "${keyword_array[@]}"; do
 done
 
 echo "Operation completed."
+# EOF
+# !!!+++ This Script Comes Without any Support +++!!!
+# ./Just enjoy it.
