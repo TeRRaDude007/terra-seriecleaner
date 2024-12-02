@@ -1,6 +1,6 @@
 #!/bin/bash
 ##################################################
-## TeRRaDuDe wiper vers 1.3                     ##
+## TeRRaDuDe wiper vers 1.2                     ##
 ## Wipes diectory that contains tvmaze tags :   ##
 ## e.g., 'Reality,Game Show'                    ##
 ##################################################
@@ -21,20 +21,9 @@
 #     NOTE: This script will now require the target directory only when the action is move.
 #     When the action is wipe, you can omit the target directory, 
 #     and the script will process the keywords accordingly.
-# 1.3 Skip serie we want to keep, case-insensitive matching for safety
 #
 #################################################
 #     Keep in mind: There is NO undo.           #
-#################################################
-
-# Skip directories starting with 'The.Grant.Tour' or 'The.Great.Escape'
-shopt -s nocasematch  # Enable case-insensitive matching for safety
-if [[ "$dir" == The.Grant.Tour* || "$dir" == The.Great.Escape* ]]; then
-    echo "Skipping directory: $dir"
-    continue
-fi
-shopt -u nocasematch  # Disable case-insensitive matching after use
-
 #################################################
 ######## DONT EDIT BELOW THIS LINE ##############
 #################################################
