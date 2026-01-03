@@ -22,6 +22,13 @@
 #     When the action is wipe, you can omit the target directory, 
 #     and the script will process the keywords accordingly.
 #
+# Note:
+#  Please take note that these scripts come without instructions on how to set
+#  them up, it is sole responsibility of the end user to understand the scripts
+#  function before executing them. If you do not know how to execute them, then
+#  please don't use them. They come with no warranty should any damage happen due
+#  to the improper settings and execution of these scripts (missing data, etc).
+#
 #################################################
 #     Keep in mind: There is NO undo.           #
 #################################################
@@ -85,6 +92,4 @@ for keyword in "${keyword_array[@]}"; do
 done
 
 echo "Operation completed."
-# EOF
-# !!!+++ This Script Comes Without any Support +++!!!
-# ./Just enjoy it.
+#eof
